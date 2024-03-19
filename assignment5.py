@@ -41,7 +41,10 @@ for i in range(0,195): # Across country range
 
 # Add in stylesheet
 stylesheet = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+# Set up app and sever
 app = Dash(__name__, external_stylesheets=stylesheet)
+server = app.server
 
 # Set app layout
 app.layout = html.Div([
